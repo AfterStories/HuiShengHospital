@@ -1,3 +1,5 @@
+
+
 .header-content{
 	position: relative;
 	width: 892px;
@@ -41,117 +43,54 @@
 
 /* nav开始 */
 #nav_box{
-	width:460px;
+	width:473px;
 	height:48px;
 	position: absolute;
+	text-align:center;
 	left:202px;
 	top:56px;   
-    padding:0;
+    
 
 }
 
-#navtext1{
-	width: 460px;
-	height: 10px;
-	padding:0 0 12px 0;
-	margin:0 18px;
-	overflow:hidden;
-	text-align:center;
-}
 
-#navtext1:after{  
-  content: "";  
-  display: table;
-  display:block;
-  width: 0;height: 0;
-  visibility:hidden;
-}
+#nav_box img{
 
-
-#navtext1  li{
-	height: 10px;
-	float: left;
-	list-style-type: none;	
-	position:relative;	
-	display:inline;
-}
-
-#navtext1  li a{
-	float: left;
-	font-family:微软雅黑;
-	font-size:10px;
-	line-height: 10px;
-	color:#fd533b;
-	text-decoration:none;
-	cursor:pointer;
-
-
-}
-#navtext1 .line{
-	float: left;
-    height: 10px;
-    width: 1px;
-    background: #fd533b;
-	vertical-align:middle;
-	margin:0 6px;
-}
-.nav-eng,.line{
-	position: relative;
-}
-#nav1{	
-	left:6px;
-}
-#nav-line1{
-	left:16px;
-}
-#nav2{	
-	left:18px;
-}
-#nav-line2{
-	left:20px;
-}
-#nav3{	
-	left:26px;
-}
-#nav-line3{
-	left:30px;
-}
-
-#nav4{	
-	left:28px;
-}
-#nav-line4{
-	left:28px;
-}
-#nav5{	
-	left:30px;
-}
-#nav-line5{
-	left:34px;
-}
-#nav6{	
-	left:40px;
+	width: 408px;
+	height: 12px;
+	display：inline-block；
 }
 
 #navtext2{
-	margin:0;
-	width:460px;
+	width:476px;
 	height:24px;
-	padding:0 15px;
+	
 	background-color:#f191a0;	
-	border-radius:24px; 
+			border-radius:24px; 
+	-webkit-border-radius:24px;//webkit内核
+  	   -moz-border-radius:24px;//mozilla
+  		-ms-border-radius:24px;//IE
+  		 -o-border-radius:24px;//opera
+  	text-align:center;
 	border:2px solid;
 	border-color: #f87e9e;
+	text-align: center;
 }
-
-#navtext2 li{
-
+#navtext2 ul{
+	width:450px;
+	height:24px;	
+	margin: 0 auto;
+	display:block;
+	text-align: center;
+}
+#navtext2 ul li{
 	float: left;
-	height: 24px;	
+	height: 24px;
 	list-style-type: none;	
-	border-right:1px;
-	border-color: #ffffff;
+	display:inline-block;
 
+
+	
 }
 #navtext2 li a{
 	float: left;
@@ -162,13 +101,19 @@
 	text-decoration:none;
 	cursor:pointer;
 	font-family:"黑体";
-	font-size: 15px;
-	text-align: center;
-	margin:0;
-	padding: 0;
+	font-size: 16px;
 
 }
-
+#navtext2 .line1{
+	float: left;	
+    height: 15px;
+    width: 1px;
+    background: #ffffff;
+    margin:5px 6px 0 6px;
+    position: relative;
+    left: 1px;
+    display: inline;
+}
 #navtext2 .line2{
 	float: left;	
     height: 15px;
@@ -176,6 +121,35 @@
     background: #ffffff;
     margin:5px 6px 0 6px;
 
+}
+#navtext2 .line3{
+	float: left;	
+    height: 15px;
+    width: 1px;
+    background: #ffffff;
+    margin:5px 6px 0 6px;
+    position: relative;
+    left: -3px;
+
+}
+#navtext2 .line4{
+	float: left;	
+    height: 15px;
+    width: 1px;
+    background: #ffffff;
+    margin:5px 6px 0 6px;
+    position: relative;
+    left: -3px;
+
+}
+#navtext2 .line5{
+	float: left;	
+    height: 15px;
+    width: 1px;
+    background: #ffffff;
+    margin:5px 6px 0 6px;
+    position: relative;
+    left: -3px;
 
 }
 
@@ -198,20 +172,23 @@
 	position: absolute;
 	top:80px;
 	right:0px;
-	width:137px;
+	width:138px;
 	height:23px;	
 }
  
 .search .search-text{
+	cursor:pointer;
 	float: left;
 	line-height:22px;	
-	width:112px;
+	width:113px;
 	height:22px;	
 	background-color:#ffffff;
 	padding:0;
 	border:1px solid #E4E4E4;
 	color:#C4C4C4;
+
 }
+
 
 
 .search .btn{
@@ -351,7 +328,11 @@
 	right: 12px;
 	bottom: 10px;
 	background-image: url(../images/left-readmore.png);
+	border-style:none;
+	vertical-align:middle;	
+	/* cursor:pointer; */
 }
+
 .readmore-text{
 	width: 82px;
 	height: 27px;
@@ -363,6 +344,8 @@
 	font-weight: bold;
 	color: #ffffff;
 	z-index: 9999;
+	border-style:none; 
+	cursor:pointer;
 }
 
 
@@ -529,13 +512,11 @@
 }
 
 
-footer{
+#footer{
 	width: 892px;
 	height:42px;
 	margin: 16px auto;
 	position: relative;
-
-
 }
 #footer-left-bg{
 	width: 126px;
@@ -576,7 +557,7 @@ footer{
 #footer-left-text #footer-left-text1{
 	position: relative;
 	top: -5px;
-	left:5px;
+
 }
 #footer-left-text #footer-left-text2{
 	position: relative;
@@ -597,22 +578,46 @@ footer{
 
 #footer-right{
 	float: right;
-	width: 280px;
+	width: 400px;
 	height: 64px;
+	
 }
-#footer-right .num{
+
+#address{
 	float: right;
+	color: #8d786a;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	margin: 0;
+
+}
+ #footer-right #num1 span{
+	float: right;
+	position: absolute;
+	right: 0;
+	top:15px;
 	color: #8d786a;
 	font-family: "微软雅黑";
 	font-size: 8px;
+	-webkit-transform:scale(0.98);
+	display:block;
+	padding:0px;
+	margin: 0px;
 }
-
-#footer-right #address{
+ #footer-right #num2 span{
 	float: right;
+	position: absolute;
+	right: 0;
+	top:28px;
 	color: #8d786a;
 	font-family: "微软雅黑";
-	font-size: 10px;
+	font-size: 8px;
+	-webkit-transform:scale(0.98);
+	display:block;
+	padding:0px;
+	margin: 0px;
 }
+
 
 #sidebar{
 	width: 26px;
@@ -620,53 +625,61 @@ footer{
 	margin: 0;
 	padding:0;
 	position: absolute;
-	right: 86px;
+	right: 140px;
 	top:154px;
 }
 
-
 #sidebar-service{
 	width: 26px;
-	height: 80px;
+	height: 90px;
 	background-color:#ffffff;
-	border-radius:30px;  
+
+			border-radius:30px; 
+	-webkit-border-radius:30px;/* webkit内核 */
+  	   -moz-border-radius:30px;/* mozilla */
+  		-ms-border-radius:30px;/* IE */
+  		 -o-border-radius:30px;/* opera  */
+
 	border-color:#f191a0;
 	border-style: solid;
 	border-width: 3px;
-	float: right;
-	position: absolute;
-	right: 88px;
-	top: 0;
+	position: relative;
+	display: table;
+	
 }
 
 #sidebar-service-text{
-	width: 26px;
-	height: 80px;
-	float: right;
-	position: absolute;
 	color: #f191a0;
 	font-size: 14px;
 	font-weight: bold;
-	right: 85px;
-	top:3px;
+	margin: o auto;
+	text-align:center;
+	width: 26px; 
+	margin: 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	cursor:pointer;
 }
 
 #sidebar-line{
 	height: 398px;
 	width: 1px;
 	background-color:#f191a0;
-	float: right;
-	position: absolute;
-	right: 104px; 
-	top: 85px;
+	margin:0 auto;
+	position: relative;
+	left: 2px;
 }
 
 #sidbar-btn{
+	
+	position: absolute;	 
+	top: 483px;
+	right: -2px;
 	width: 25px;
 	height: 25px;
+	cursor:pointer;
+
 	background-image:url(../images/sidebar-btn.png);
-	float: right;
-	position: absolute;
-	right: 92px; 
-	top: 483px;
+
+
 }
