@@ -1,4 +1,12 @@
+/* body{
 
+width:100%;
+
+min-width:1400px;
+
+width:expression_r(document.body.clientWidth < 1000 ? "1000px": "auto" );
+
+} */
 
 .header-content{
 	position: relative;
@@ -215,7 +223,7 @@
 	height: 256px;
 	margin:0 auto;
 	padding: 0;
-	position:relative; 
+	
 
 }
 
@@ -622,11 +630,10 @@
 #sidebar{
 	width: 26px;
 	height: 506px;
-	margin: 0;
-	padding:0;
 	position: absolute;
-	right: 140px;
-	top:154px;
+	left: 50%;
+	top:170px;
+	margin-left: 500px;
 }
 
 #sidebar-service{
