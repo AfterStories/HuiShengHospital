@@ -1,0 +1,55 @@
+
+#info{
+	width: 892px;
+	height: 604px;
+
+	
+
+}
+#info{
+	margin: 0 auto;
+	
+	width: 856px;
+	height: 603px;
+	color: #aba890;
+	font-family: "Microsoft YaHei";
+	font-size: 15px;
+}
+
+#info-bg{
+	padding: 10px;
+	width: 856px;
+	height: 603px;
+	margin:0 auto;
+	background-image: url(../images/contactus-bg.png);
+	background-repeat: no-repeat;
+}
+#info-bg h3{
+	color: #f191a0;
+	font-family: "Microsoft YaHei";
+	margin: 5px;
+	font-weight: 500;
+}
+#info-bg span{
+	margin-left:5px; 
+}
+.left-margin{
+	margin-left:5px; 
+}
+
+.way-name{
+	float: left;
+}
+.how-way{
+	width: 730px;
+	float: left;
+
+}
+
+#map{
+	width: 844px;
+	height: 400px;
+	margin-top: 95px;
+
+}
+

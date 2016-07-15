@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>惠生好运孕疗中心-联系我们</title>
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css" />  
+	<link rel="stylesheet" href="css/normalize.css v3.0.2.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contactus-style.css">
+	
+
+</head>
+
+<body>
+	<!-- 头部开始 -->
+  <div id="header">
+  	<div class="header-content">
+  	<!-- logo开始 -->
+	<div class="logo" style="cursor:pointer;" onclick="location.href='file:///C:/Users/STORIES/Desktop/HuiShengHospital/index%20home.html'">		
+		<span id="logo-text1">HUISHENG</span>
+		<span id="logo-text2">惠生好孕医疗中心</span>	
+	</div>
+		<!-- logo结束 -->
+		
+		<!-- 导航开始 -->
+	
+	<nav id="nav_box">
+    	<img src="images/nav-eng.png">
+		
+    	<div id="navtext2" >
+    	<ul>
+    		<li><a href="#">代孕套餐</a><div class="line1"></div></li>    		
+    		<li><a href="#">成功案例</a><div class="line2"></div></li>    		
+    		<li><a href="#">代孕知识</a><div class="line3"></div></li>    		
+    		<li><a href="#">医疗团队</a><div class="line4"></div></li>    		
+    		<li><a href="#">公司介绍</a><div class="line5"></div></li>    		
+    		<li ><a href="#">联系我们</a></li>
+    		</ul>
+    	</div>
+    	
+	</nav>
+		<!-- 导航结束 -->
+
+
+		<!-- 搜索栏开始 -->
+		<div id="right-icon">
+			<img src="images/mail.jpg"  class="icon" >
+			<img src="images/rss.jpg"  class="icon" >
+			<img src="images/fb.jpg"  class="icon" >
+			<img src="images/twitter.jpg" class="icon">
+		</div>
+			<div class="search">
+			<form >
+				<span class="it"><input type="text" class="search-text"/></span>
+				<button class="btn" type="submit"></button>
+			</form>
+			</div>
+		<!-- 搜索栏结束 -->
+		</div>
+
+  </div>
+	<!-- 头部结束 -->
+
+
+	<!-- 主体开始 -->
+  <div id="main">
+
+
+	
+		<div id="info">
+		
+		<div id="info-bg"><!-- 联系我们 主体内容开始 -->
+			<h3>联系我们</h3>
+			<span> 医院地址：北京市朝阳区傲城融富中心A座3005</span></br>
+			<span>咨询电话：010-84254817</span>
+			
+			<div id="way">
+			<div id="bus-way" class="left-margin">
+				<div class="way-name">公交路线：</div>
+				<div class="how-way">地铁2号线 → 地铁5号线，全程约12.5公里 · 从东直门乘坐地铁2号线,经过1站, 到达雍和宫站 · 步行约100米,换乘
+                 地铁5号线 · 乘坐地铁5号线,经过6站, 到达北苑路北站 · 步行约760米,到达傲城融富中心</div>
+			</div>
+			
+
+			<div id="car-way" class="left-margin">
+				<div class="way-name">行车路线：</div>
+				<div class="how-way">地铁2号线 → 地铁5号线，全程约12.5公里 · 从东直门乘坐地铁2号线,经过1站, 到达雍和宫站 · 步行约100米,换乘
+                 地铁5号线 · 乘坐地铁5号线,经过6站, 到达北苑路北站 · 步行约760米,到达傲城融富中心</div>
+            </div>
+			</div>
+
+			<div id="map"><!-- 百度地图 -->
+			<style type="text/css">
+   
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+  <!--百度地图容器-->
+  <div style="width:830px;height:310px;border:#ccc solid 1px; padding-top:100px; " id="dituContent"></div>
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(116.42109,40.037942);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+    map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"惠生好孕医疗中心",content:"惠生好孕医疗中心",point:"116.421027|40.038122",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+            
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+
+		</div><!-- 地图结束 -->
+			</div>
+	
+		</div>  <!-- info 联系我们 主体内容结束 -->
+
+	
+
+ <!-- 尾部开始 -->
+<div id="footer">
+	<div id="footer-left-bg"></div>
+	<div id="footer-left-text">
+		<ul>
+			<li id="footer-left-text1"><a href="#">常见问题</a></li>			
+			<li id="footer-left-text2"><a href="#">新手指南</a></li>			
+			<li id="footer-left-text3"><a href="#">合作伙伴</a></li>
+			<li id="footer-left-text4"><a href="#">意见反馈</a></li>			
+		</ul>
+	</div>
+	<div id="footer-right">
+	<div id="address">医院地址：中国北京市朝阳区曙光大厦1605室</div>
+	<div id="num1"><span>TEL：02-6340-1800/FAX:02-6340-1810/E-MAIL:WEBMASTEREFREEGINE</span></div>
+	<div id="num2"><span>copyright(c) 2008 FREEGINE.COM ALL RIGHT RESSRUED</span></div>
+	</div>
+
+</div>
+<!--  尾部结束 -->
+
+<!-- 侧边导航按钮开始 -->
+<div id="sidebar">
+	<div id="sidebar-service">
+		<div id="sidebar-service-text" class="oWindow" uid="8759328409230">联系客服</div>
+	</div>
+	
+	<div id="sidebar-line"></div>
+	<div id="sidbar-btn"><a href="#top"></a></div>
+</div>
+<!-- 侧边导航按钮结束 -->
+
+</div>
+
+</div>
+	<!-- 主体结束 -->
+
+<script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/flexslider.js"></script> 
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</body>
+</html>
+
+
