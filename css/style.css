@@ -1,9 +1,9 @@
-body{
+html,body{
 	height: 100%;
- 	background-color: #f7f4e5；
+ 	background-color: #f7f4e5;
+
 
 }
-
 
 .header-content{
 	position: relative;
@@ -210,9 +210,6 @@ body{
 
 #main{
 		width:100%;
-		position: absolute;
-		top: 118px;
-		bottom: 0;   /* main区块盒子自适应不同显示器屏幕宽高 */
 		background-image: url(../images/main-gb.jpg);
 		background-repeat;
 }
@@ -631,8 +628,8 @@ body{
 	height: 506px;
 	position: absolute;
 	left: 50%;
-	top:70px;
-	margin-left: 500px;
+	top:180px;
+	margin-left: 460px;
 }
 
 #sidebar-service{
