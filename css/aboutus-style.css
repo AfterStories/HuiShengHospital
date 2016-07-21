@@ -105,6 +105,19 @@
 	height: 462px;
 	background-image: url(../images/chinamap.png);
 }
+.text-box span{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #616161;
+}
 
+
+#process{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 570px;
+	height: 428px;
+	background-image: url(../images/process.png);
+}
 /* 主题内容结束 */
 

@@ -1,0 +1,31 @@
+
+<ul id = "ul_img">
+	
+</ul>
+
+
+
+<script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
+
+<script>
+	$.ajax({
+		url:"http://192.168.1.101:8081/home/order/getorderlist",
+		type:"POST",
+		dataType:"json",
+		
+		success:function(data) {
+			var url = "http://192.168.1.101:8081";
+			for (var i = 0; i < data.length; i++) {
+				//alert(data[i].itemList[0].imgurl);
+				
+				var s = "<li><img src = '" + 
+					url + data[i].itemList[0].imgurl +
+				"'></img></li>";
+				$("#ul_img").append(s);
+
+			}
+		}
+
+	});
+
+</script>
