@@ -1,0 +1,138 @@
+
+.split-line{
+	width: 892px;	
+	margin:0 auto;
+	padding: 0;
+	position:relative;
+
+}
+
+.pointline{
+	width: 892px;
+	position:absolute;
+	bottom: 0px;
+	left:0;
+}
+
+
+/* 主题内容开始 */
+
+#content{
+	width: 892px;
+	height: 582px;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url(../images/aboutus-bg.png);
+
+}
+
+#aboutus-title{
+	float: left;
+	position: absolute;
+	margin-left: -15px;
+}
+
+#left-nav{
+	
+	width: 152px;
+	height: 282px;
+	margin: 0 ;
+	padding: 0;
+	background-image: url(../images/aboutus-leftnav-bg.png);
+	
+}
+
+#left-nav p{
+	padding-top: 50px;	
+	
+}
+#left-nav a{
+	text-align:center;	
+	margin: 12px; auto;
+	width: 130px;
+	height: 30px;
+	display: block;
+	color:#aba890;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	line-height: 30px;
+	text-decoration:none;
+}
+
+#left-nav p .left-nav-btn{
+	color: #ffffff;
+	background-image: url(../images/aboutus-nav-bg.png);
+}
+
+
+.aboutus-text{
+	color: #616161;
+	width: 706px;
+	margin: 0;
+	padding: 0;
+	float: right;
+	margin-left: 178px;
+	position: absolute;
+	top: 200px;
+	font-family: "微软雅黑";
+
+}
+
+.title{
+	font-weight:400;
+	font-family: "微软雅黑";
+}
+
+#text{
+	margin: 10px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+
+
+#part2{
+	margin-top: 30px;
+}
+#text-ul{
+	padding-left: 8px;
+	font-size: 14px;
+	margin: 30px;
+	font-family: "微软雅黑";
+}
+
+#map{
+	width: 630px;
+	height: 462px;
+	background-image: url(../images/chinamap.png);
+}
+
+.text-box{
+		display:none;
+}
+
+
+.text-box span{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #616161;
+}
+
+
+#about-process{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 570px;
+	height: 428px;
+	background-image: url(../images/process.png);
+}
+
+#IVF-process{
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 668px;
+	height: 448px;
+	background-image: url(../images/IVF.png);
+}
+
+/* 主题内容结束 */
+
