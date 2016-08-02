@@ -6,7 +6,7 @@
 	<title>惠生好运孕疗中心-关于我们</title>
 	<link rel="stylesheet" href="css/normalize.css v3.0.2.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/aboutus-style.css">
+	<link rel="stylesheet" href="css/tabpage-style.css">
 
 </head>
 
@@ -15,7 +15,9 @@
   <div id="header">
   	<div class="header-content">
   	<!-- logo开始 -->
-	<div class="logo">		
+	<div class="logo" style="cursor:pointer;" onclick="location.href='http://localhost:8088/HuiShengHospital/index-home.html'">	
+
+	
 		<span id="logo-text1">HUISHENG</span>
 		<span id="logo-text2">惠生好孕医疗中心</span>	
 	</div>
@@ -28,12 +30,13 @@
 		
     	<div id="navtext2" >
     	<ul>
+    	<ul>
     		<li><a href="#">就诊流程</a><div class="line1"></div></li>    		
     		<li><a href="#">成功案例</a><div class="line2"></div></li>    		
     		<li><a href="#">妇科知识</a><div class="line3"></div></li>    		
     		<li><a href="#">医疗团队</a><div class="line4"></div></li>    		
-    		<li><a href="#">关于我们</a><div class="line5"></div></li>    		
-    		<li ><a href="#">联系我们</a></li>
+    		<li><a href="http://localhost:8088/HuiShengHospital/index-aboutus.html">关于我们</a><div class="line5"></div></li>    		
+    		<li><a href="http://localhost:8088/HuiShengHospital/index-contactus.html">联系我们</a></li>
     		</ul>
     	</div>
     	
@@ -91,6 +94,11 @@
 	</div>
 	<!-- 航切换按钮结束 -->
 	<div class="aboutus-text">
+
+
+
+<!-- 页面内用于切换的盒子 第一个-->
+
 		<div class="text-box" style="display:block">
 		<p id="part1">
 		<h4 class="title">关于我们</h4>
@@ -114,28 +122,30 @@
 		</p>
 	</div>
 
-	<!-- 接待中心 -->
 
+<!-- 页面内用于切换的盒子 第2个  地图-->
 		<div class="text-box" style="display:none">
 		  		<div id="map">
 		  			
 		  		</div>
 		</div>
 
-		<div class="text-box" style="display:none">
-		  拉拉拉拉阿拉拉拉拉<br>
-		  拉拉拉拉阿拉拉拉拉<br>
-		  拉拉拉拉阿拉拉拉拉<br>
-		  拉拉拉拉阿拉拉拉拉<br>
-		  拉拉拉拉阿拉拉拉拉<br>
-		 	
+
+<!-- 页面内用于切换的盒子 第3个  医院特色-->
+
+			  	<div class="text-box" style="display:none" >
+				医院特色
+			</div>
+<!-- 页面内用于切换的盒子 第4个  流程图-->
+		<div class="text-box" style="display:none" >
+		  	<span>服务流程 - 我们拥有严谨的就医流程，保证您的健康及安全</span>
+		  	<div id="about-process"></div>		 	
 		</div>
-	
-		</div>
-
-
-
-
+<!-- 页面内用于切换的盒子 第5个  技术优势-->
+		  	<div class="text-box" style="display:none" >
+				技术优势
+			</div>
+			</div>
 </div>
 <!-- 主题内容结束 -->
 
@@ -187,10 +197,9 @@
 	<!-- 主体结束 -->
 
 <script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
-
 <script type="text/javascript" src="js/flexslider.js"></script> 
 <script type="text/javascript" src="js/jquery.flexslider.js"></script>
-<script type="text/javascript" src="js/aboutus.js"></script> 
+<script type="text/javascript" src="js/tabchange.js"></script> 
 
 
 </body>

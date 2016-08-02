@@ -1,8 +1,6 @@
 html,body{
 	height: 100%;
  	background-color: #f7f4e5;
-
-
 }
 
 .header-content{
@@ -25,6 +23,10 @@ html,body{
 	position: absolute;
 	top:54px; 
 	left:0px;
+	display: block;
+	text-decoration:none;
+	color: #000000;
+
 }
 #logo-text1{
 	padding:0;
@@ -209,7 +211,7 @@ html,body{
 
 
 #main{
-		width:100%;
+		
 		background-image: url(../images/main-gb.jpg);
 		background-repeat;
 }
