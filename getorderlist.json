@@ -1,0 +1,57 @@
+[ 
+/*第一个元素*/ 
+		{"orderid":"1082",
+		  "ordercode":"20160707",
+		  "status":"1",
+		  "createtime":"2016-7-07 09:19:56",
+		  "machineid":"39",
+		  "machinename":"万达华府1号售货机",
+		  "machinelng":"121.646245",
+		  "machinelat":"38.923578",
+		  "machineaddr":"大连市西岗区万达华府",
+		  "itemList":[{"imgurl":"HuiShengHospital/public/images/item/tudou.jpg",
+			       "name":"土豆",
+			       "price":"3.5"
+			       }
+			       ]
+		},
+ /*第二个元素*/ 
+		{"orderid":"1086",
+		"ordercode":"1100201606221086",
+		"status":"2",
+		"createtime":"2016-6-24 15:09:08",
+		"machineid":"39",
+		"machinename":"万达华府1号售货机",
+		"machinelng":"121.646245",
+		"machinelat":"38.923578",
+		"machineaddr":"大连市西岗区万达华府",
+		"itemList":[	{"imgurl":"/public/images/item/tudou.jpg",
+				"name":"土豆",
+				"price":"3.5"
+				},
+				{"imgurl":"HuiShengHospital/public/images/item/caihua.jpg",
+				"name":"菜花",
+				"price":"5"
+				}
+			 ]
+		 },
+		
+/*第三个元素*/
+		{"orderid":"1080",
+		"ordercode":null,
+		"status":"1",
+		"createtime":"2016-6-16 16:35:19",
+		"machineid":"39",
+		"machinename":"万达华府1号售货机",
+		"machinelng":"121.646245",
+		"machinelat":"38.923578",
+		"machineaddr":"大连市西岗区万达华府",
+		"itemList":[
+				{"imgurl":"HuiShengHospital/public/images/item/qiezi.jpg",
+				"name":"土豆",
+				"price":"3"
+				}
+			     ]
+		}
+
+]

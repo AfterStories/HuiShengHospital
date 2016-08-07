@@ -111,7 +111,6 @@
 	color: #616161;
 }
 
-<<<<<<< HEAD:css/tabpage-style.css
 .text-box{
 		display:none;
 }
@@ -125,17 +124,14 @@
 
 
 #about-process{
-=======
 
-#process{
->>>>>>> origin/master:css/aboutus-style.css
 	margin-top: 20px;
 	margin-left: 20px;
 	width: 570px;
 	height: 428px;
 	background-image: url(../images/process.png);
 }
-<<<<<<< HEAD:css/tabpage-style.css
+
 
 #IVF-process{
 	margin-top: 20px;
@@ -169,7 +165,20 @@
 	background-image: url(../images/lab.png);
 }
 
-=======
->>>>>>> origin/master:css/aboutus-style.css
-/* 主题内容结束 */
+#process1{
+	margin-top: 10px;
+	margin-left: 90px;
+	width: 447px;
+	height: 455px;
+	background-image: url(../images/process1.png);
+}
 
+
+
+#process2{
+	margin-top: 50px;
+	margin-left: 0px;
+	width: 684px;
+	height: 469px;
+	background-image: url(../images/process2.png);
+}
