@@ -45,18 +45,33 @@
 
 
 		<!-- 搜索栏开始 -->
-		<div id="right-icon">
-			<img src="images/mail.jpg"  class="icon" >
-			<img src="images/rss.jpg"  class="icon" >
-			<img src="images/fb.jpg"  class="icon" >
-			<img src="images/twitter.jpg" class="icon">
-		</div>
-			<div class="search">
-			<form >
-				<span class="it"><input type="text" class="search-text"/></span>
-				<button class="btn" type="submit"></button>
-			</form>
-			</div>
+
+<div class="search">
+					
+<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+
+    <input type="text"  onfocus="checkHttps" name="word"  size="30" class="search-text">
+    <input type="submit" value="" class="btn">
+</form>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };
+    function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+            return true;
+        }
+        else {
+            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            return true;
+        }
+    };
+</script>
+
+</div><!-- 搜索栏结束 -->
 		<!-- 搜索栏结束 -->
 		</div>
 
@@ -102,7 +117,7 @@
 		<div class="text-box" style="display:block">
 		<p id="part1">
 		<h4 class="title">关于我们</h4>
-		 <p id="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京惠生好孕健康咨询有限公司是一家专注于海外高端生殖医学服务的企业，致力于
+		 <p id="text"  style="text-indent:2em;">北京惠生好孕健康咨询有限公司是一家专注于海外高端生殖医学服务的企业，致力于
 打造一个连通海外高端医院和中国大陆客户的一站式生殖健康服务平台，目前已经成功与
 柬埔寨、泰国、美国、中国（香港）等国家和地区的尖端医疗机构建立战略合作关系。现
 已在北上广深等一线城市建立了海外医疗咨询门诊部，不出国门即可让每个家庭都可以享
@@ -133,8 +148,38 @@
 
 <!-- 页面内用于切换的盒子 第3个  医院特色-->
 
-			  	<div class="text-box" style="display:none" >
-				医院特色
+			<div class="text-box" style="display:none" >
+			<span>医院特色 - 我们的医院能让您体验到完美的私人定制治疗</span>
+			<div id="character">
+				<div class="character-box">
+					<span>五星级公寓式酒店服务套餐</span>
+					<img src="./images/hotel.png">
+					<p style="text-align: left">提供当地豪华5星级公寓式酒店住宿服务（有厨房） 陪同翻译，提供专业的陪同翻译服务。酒店保姆服务，保姆服务，安排疗程期间的营养膳食（含食材）。</p>
+				</div>
+
+				<div class="character-box">
+					<span>私人定制公寓服务套餐</span>
+					<img src="./images/server.png">
+					<p style="text-align: left">提供当地豪华5星级公寓式酒店住宿服务（有厨房） 陪同翻译， 提供专业的陪同翻译服务。酒店保姆服务，保姆服务，安排疗 程期间的营。</p>
+				</div>
+
+				<div class="character-box">
+					
+					<img src="./images/servant.png">
+					
+				</div>
+
+				<div class="character-box">
+					<span>私人定制公寓服务套餐</span>
+					
+					<p style="text-align: left">
+					很多客户都会担心在泰国试管婴儿的生活上会有所不便，因为可能会不适应泰国的生活，对此，您根本不用担心，因为我们早已经有所准备。在衣食住行各个方面，都不会让您觉得不舒服。为了更好的照顾客户，每个客户都会有一个专门的保姆为您服务，而且我们的保姆都会中泰两国的语言，在交流中不会有任何问题。每一个保姆都是经过专业的培训，从清理衣物、准备餐饮到整理房间，各个方面的服务都可以达到5星级酒店的服务标准。
+					</p>
+				</div>
+			</div>
+
+
+
 			</div>
 <!-- 页面内用于切换的盒子 第4个  流程图-->
 		<div class="text-box" style="display:none" >
@@ -143,7 +188,20 @@
 		</div>
 <!-- 页面内用于切换的盒子 第5个  技术优势-->
 		  	<div class="text-box" style="display:none" >
-				技术优势
+				技术优势 - 我们拥有别人所没有的各项技术优势。
+				<ol id="advantage">
+					<li>
+					顶尖医疗顾问团队：聘请国内知名三甲医院主任作为公司医疗顾问，全方位解决客户的关于试管婴儿的医学问题。
+					</li>
+					<li>强强联合：惠生好孕和美国HRC、柬埔寨皇家生殖遗传医院、泰国杰特宁生殖研究所等知名辅助生殖机构达成了战略合作协议，为国内客户建立了海外高端试管婴儿治疗的绿色通道。
+					</li>
+					<li>
+					专业的服务团队：从机票预订，签证办理，海外翻译，酒店预订，专家预约，隐私门诊，一站式无忧生育服务。
+					</li>
+					<li>
+					完善的服务网点：惠生好孕在中国大陆拥有10个医疗网点，遍布北上广深等一二线城市，可在国内完成前期促排治疗，缩短在海外的停留时间，尽可能的减少对您生活的影响。
+					</li>
+				</ol>
 			</div>
 			</div>
 </div>
@@ -197,8 +255,7 @@
 	<!-- 主体结束 -->
 
 <script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/flexslider.js"></script> 
-<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
 <script type="text/javascript" src="js/tabchange.js"></script> 
 
 

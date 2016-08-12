@@ -45,18 +45,33 @@
 
 
 		<!-- 搜索栏开始 -->
-		<div id="right-icon">
-			<img src="images/mail.jpg"  class="icon" >
-			<img src="images/rss.jpg"  class="icon" >
-			<img src="images/fb.jpg"  class="icon" >
-			<img src="images/twitter.jpg" class="icon">
-		</div>
-			<div class="search">
-			<form >
-				<span class="it"><input type="text" class="search-text"/></span>
-				<button class="btn" type="submit"></button>
-			</form>
-			</div>
+
+<div class="search">
+					
+<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+
+    <input type="text"  onfocus="checkHttps" name="word"  size="30" class="search-text">
+    <input type="submit" value="" class="btn">
+</form>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };
+    function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+            return true;
+        }
+        else {
+            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            return true;
+        }
+    };
+</script>
+
+</div><!-- 搜索栏结束 -->
 		<!-- 搜索栏结束 -->
 		</div>
 

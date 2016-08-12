@@ -7,6 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="css/flexslider.css" />  
 	<link rel="stylesheet" href="css/normalize.css v3.0.2.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/flexslider.js"></script> 
+<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/3tdshow.js"></script>
 
 </head>
 
@@ -15,7 +19,7 @@
   <div id="header">
   	<div class="header-content">
   	<!-- logo开始 -->
-	<div class="logo" style="cursor:pointer;" onclick="location.href='http://localhost:8088/HuiShengHospital/index-home.html'">		
+	<div class="logo" style="cursor:pointer;" onclick="location.href='http://192.168.1.109:8088/HuiShengHospital/index-home.html'">		
 		<span id="logo-text1">HUISHENG</span>
 		<span id="logo-text2">惠生好孕医疗中心</span>	
 	</div>
@@ -28,12 +32,12 @@
 		
     	<div id="navtext2" >
     	<ul>
-    		<li><a href="http://localhost:8088/HuiShengHospital/index-process.html">就诊流程</a><div class="line1"></div></li>    		
-    		<li><a href="#">成功案例</a><div class="line2"></div></li>    		
-    		<li><a href="#">妇科知识</a><div class="line3"></div></li>    		
-    		<li><a href="#">医疗团队</a><div class="line4"></div></li>    		
-    		<li><a href="http://localhost:8088/HuiShengHospital/index-aboutus.html">关于我们</a><div class="line5"></div></li>    		
-    		<li><a href="http://localhost:8088/HuiShengHospital/index-contactus.html">联系我们</a></li>
+    		<li><a href="http://192.168.1.109:8088/HuiShengHospital/index-process.html">就诊流程</a><div class="line1"></div></li>    		
+    		<li><a href="http://192.168.1.109:8088/HuiShengHospital/index-success.html">成功案例</a><div class="line2"></div></li>    		
+    		<li><a href="http://192.168.1.109:8088/HuiShengHospital/index-knowledge.html">妇科知识</a><div class="line3"></div></li>    		
+    		<li><a href="http://192.168.1.109:8088/HuiShengHospital/index-team.html">医疗团队</a><div class="line4"></div></li>    		
+    		<li><a href="http://192.168.1.109:8088/HuiShengHospital/index-aboutus.html">关于我们</a><div class="line5"></div></li>    		
+    		<li><a href="http://192.168.1.109:8088/HuiShengHospital/index-contactus.html">联系我们</a></li>
     		</ul>
     	</div>
     	
@@ -42,20 +46,33 @@
 
 
 		<!-- 搜索栏开始 -->
-		<div id="right-icon">
-			<img src="images/mail.jpg"  class="icon" >
-			<img src="images/rss.jpg"  class="icon" >
-			<img src="images/fb.jpg"  class="icon" >
-			<img src="images/twitter.jpg" class="icon">
-		</div>
-			<div class="search">
-			<form >
-				<span class="it"><input type="text" class="search-text"/></span>
-				<button class="btn" type="submit"></button>
-			</form>
-			</div>
-		<!-- 搜索栏结束 -->
-		</div>
+
+<div class="search">
+					
+<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+
+    <input type="text"  onfocus="checkHttps" name="word"  size="30" class="search-text">
+    <input type="submit" value="" class="btn">
+</form>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };
+    function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+            return true;
+        }
+        else {
+            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            return true;
+        }
+    };
+</script>
+
+</div><!-- 搜索栏结束 -->
 
   </div>
 	<!-- 头部结束 -->
@@ -66,15 +83,47 @@
  <!-- 轮播图开始 -->
   	<div id="mid">
   	<div class="flexslider" >
-  		<ul class="slides">
-    			<li><img src="./images/flexslider1.jpg" /></li>
-    			<li><img src="./images/flexslider2.jpg" /></li>
-    			<li><img src="./images/flexslider3.jpg" /></li>
-   	 		<li><img src="./images/flexslider4.jpg" /></li>
-			<li><img src="./images/flexslider5.png" /></li>  		
+  		<ul class="slides" id="s1">
+			
   		</ul>
 	</div>
-		</div>  	
+		</div>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+		showflex();
+
+		function showflex(){
+
+		$.ajax({
+		dataType:'json',
+		type:'GET',
+		data:{},
+		async:false,
+		url:'http://192.168.1.101:8083/scrollPicture/getImgList',
+		success:function(data) {
+				//
+		for (var i = 0;i<data.data.length; i++) {
+											
+			var flessiderimg ='<li><img  src="'+'http://192.168.1.101:8083/'+data.data[i].imgurl+'" /></li>'				
+    			
+			$("#s1").append(flessiderimg);
+		}
+
+
+    		$(".flexslider").flexslider();
+	
+
+		
+		}
+		});
+}}
+	);
+		</script>  
+
+
+
 <!-- 轮播图结束 -->
 
 
@@ -92,28 +141,30 @@
 <div id="left-text">
 <div id="success-text">成功案例</div>
 	<div id="left-success"></div>
-		
-	<span>The subtitle goes in this line.</span>
+	<div id="leftbox">	
 	
-	<div id="manytext1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis erat a felis commodo aliquam placerat ligula pulvinar. </div>
 	
-	<div id="manytext2">Etiam nibh metus, rhoncus adipiscing tristique non, gravida at est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
-	<div class="readmore-text">Read&nbsp;More</div>
+
+	</div>
+	
+	<div class="readmore-text">&nbsp;Read&nbsp;More</div>
 	<div class="read-more"></div>
 </div>
 	
 	
 <!-- 中间文字 -->
 <div id="mid-text">
-	<div id="mid-success-text">代孕套餐介绍 · 医疗团队介绍</div>
+	<div id="mid-success-text">就诊流程介绍</div>
 	<div id="mid-success"></div>
-		
-	<span>The subtitle goes in this line.</span>
+	<div id="midbox">	
 	
-	<div id="manytext1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis erat a felis commodo aliquam placerat ligula pulvinar. </div>
 	
-	<div id="manytext2">Etiam nibh metus, rhoncus adipiscing tristique non, gravida at est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
-	<div class="readmore-text">Read&nbsp;More</div>
+
+	</div>	
+
+	
+	
+	<div class="readmore-text">&nbsp;&nbsp;&nbsp;Explore</div>
 	<div id="mid-pic">
 		<img id="midpic1" src="./images/mid-pic1.png" alt="">
 		<img id="midpic-bg1" src="./images/mid-pic-bg.png" alt="">
@@ -129,12 +180,13 @@
 <div id="right-text">
 	<div id="success-text">妇科知识</div>
 	<div id="right-success"></div>
-		
-	<span>The subtitle goes in this line.</span>
+	<div id="rightbox">	
 	
-	<div id="manytext1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis erat a felis commodo aliquam placerat ligula pulvinar. </div>
 	
-	<div id="manytext2">Etiam nibh metus, rhoncus adipiscing tristique non, gravida at est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div>
+
+	</div>	
+
+	
 	<div class="readmore-text">Read&nbsp;More</div>
 	<div class="read-more"></div>
 </div>
@@ -169,7 +221,7 @@
 
 <!-- 侧边导航按钮开始 -->
 <div id="sidebar">
-<a id="sidebar-service" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=609449489&site=qq&menu=yes"><div id="sidebar-service-text"  >联系客服</div></a>
+<a id="sidebar-service" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=3275368068&site=qq&menu=yes"><div id="sidebar-service-text"  >联系客服</div></a>
 
 	
 	<div id="sidebar-line"></div>
@@ -181,10 +233,8 @@
   <div id="clear" style="clear: both;"></div>
 </div>
 	<!-- 主体结束 -->
-<!-- <script type="text/javascript" src="js/index-home.js"></script> -->
-<script type="text/javascript" src="js/jQuery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/flexslider.js"></script> 
-<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
+
 </body>
 </html>
 

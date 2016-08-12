@@ -1,0 +1,29 @@
+
+.split-line{
+	width: 892px;	
+	margin:0 auto;
+	padding: 0;
+	position:relative;
+
+}
+
+.pointline{
+	width: 892px;
+	position:absolute;
+	bottom: 0px;
+	left:0;
+}
+
+#aboutus-title{
+	clear: both;
+	display: block;
+	margin:auto;
+}
+#main{
+	margin-top: 10px;
+}
+
+
+#article-detail{
+	margin:10px 0;
+}

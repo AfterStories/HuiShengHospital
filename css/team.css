@@ -1,0 +1,111 @@
+
+#left-nav{
+	
+	width: 152px;
+	height: 282px;
+	margin: -35px 0 0 0 ;
+	padding: 0;
+	background-image: url(../images/aboutus-leftnav-bg.png);
+	z-index: 99999999;
+	
+}
+
+#left-nav p{
+	padding-top: 50px;	
+	z-index: 99999999;
+}
+#left-nav a{
+	text-align:center;	
+	margin: 12px; auto;
+	width: 130px;
+	height: 30px;
+	display: block;
+	color:#aba890;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	line-height: 30px;
+	text-decoration:none;
+	z-index: 99999999;
+}
+
+#left-nav p .left-nav-btn{
+	color: #ffffff;
+	background-image: url(../images/aboutus-nav-bg.png);
+	z-index: 99999999;
+}
+
+#nav-btn{
+	z-index: 99999999;
+}
+.split-line{
+	width: 892px;	
+	margin:0 auto;
+	padding: 0;
+	position:relative;
+
+}
+
+.pointline{
+	width: 892px;
+	position:absolute;
+	bottom: 0px;
+	left:0;
+}
+
+
+
+/* 主题内容开始 */
+
+#content{
+	position: relative;
+	top: 10px;
+	width: 892px;
+	height: 580px;
+	margin: 14px auto;
+	padding: 0;
+	
+
+
+}
+
+
+#royal-text{
+	font-size: 14px;
+	width: 650px;
+	margin-left: 20px;
+	margin-top: 18px;
+
+}
+#royal-tec{
+	margin-bottom: 10px;
+}
+#royal-tec p{
+	margin-top:10px;
+	font-size: 14px;
+	width: 650px;
+}
+#royal-tec h4{
+	font-weight:normal;
+	font-size: 16px;
+	margin-top: 20px;
+
+}
+
+#aboutus-title{
+	position: relative;
+	left: -15px;
+}
+
+
+
+.aboutus-text{	
+	color: #616161;
+	font-family: "微软雅黑";
+	
+	
+}
+.textboxstyle{
+	padding-top: 40px;
+	padding-left: 20px;
+	background-image: url(../images/aboutus-bg.png);
+}

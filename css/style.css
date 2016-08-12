@@ -48,6 +48,8 @@ html,body{
 
 /* LOGO结束 */
 
+
+
 /* nav开始 */
 #nav_box{
 	width:473px;
@@ -168,16 +170,7 @@ html,body{
 
 /* 搜索栏开始 */
 
-#right-icon{
-	position: absolute;
-	top:52px;
-	right:0px;
-}
-#right-icon img{
-	cursor: pointer;
-}
 
- 
 .search{
 	float: right;
 	position: absolute;
@@ -307,8 +300,14 @@ html,body{
 	font-weight: bold;
 
 }
-
-#left-text #manytext1{
+.hometd{
+	font-family: "Arial";
+	font-size: 11px;
+	color: #616161;
+	position: relative;
+	top:10px;
+}
+#left-text #manytext1,#manytext2,#manytext3{
 
 	font-family: "Arial";
 	font-size: 11px;
@@ -343,7 +342,7 @@ html,body{
 	/* cursor:pointer; */
 }
 
-.readmore-text{
+.readmore-text{	
 	width: 82px;
 	height: 27px;
 	position: absolute;
@@ -357,9 +356,6 @@ html,body{
 	border-style:none; 
 	cursor:pointer;
 }
-
-
-
 
 /* ------------mid-text------------ */
 #mid-text{
@@ -421,15 +417,6 @@ html,body{
 	
 }
 
-#mid-text #manytext2{
-	font-family: "Arial";
-	font-size: 11px;
-	color: #616161;
-	position: absolute;
-	top:120px;
-	left:16px;
-	width: 334px;
-}
 
 #mid-pic{
 	width: 242px;
@@ -691,4 +678,28 @@ html,body{
 	background-image:url(../images/sidebar-btn.png);
 
 
+}
+
+.slides li img{
+	width: 826px;
+	height: 256px;
+}
+
+#introduce{
+	width:650px;
+}
+
+#introducetext1 p{
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height:30px;"
+}
+#introducetext2 p{
+	font-size: 16px;
+}
+
+
+
+#photo{
+	float: right;
 }

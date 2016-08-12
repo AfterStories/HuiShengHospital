@@ -15,23 +15,90 @@
 }
 
 
+
 /* 主题内容开始 */
 
 #content{
+	position: relative;
+	top: 10px;
 	width: 892px;
-	height: 582px;
-	margin: 0 auto;
+	height: 580px;
+	margin: 14px auto;
 	padding: 0;
 	background-image: url(../images/aboutus-bg.png);
 
+
+}
+#title1{
+	position: relative;
+	top:50px;
+	display:table-cell
+	vertical-align:middle;
+	
+}
+#title1 img{
+	width:750px;	
+	margin-left: 18px;
+}
+#article-list{
+	width: 860px;
+	height: 580px;	
+	margin-left:20px;
+	margin-top:65px;
+	overflow-y: auto; 
+	overflow-x:hidden;
+	background-image: url("../images/aboutus-bg.png");
 }
 
+.article img{
+	float: left;
+	width:192px;
+	height: 144px;
+}
 #aboutus-title{
 	float: left;
 	position: absolute;
 	margin-left: -15px;
 }
+#successtitle{
+	color:#616161;
+	margin-left: 25px;
+	margin-top: 6px;
+}
+.article-text{
+	float: right;
+	width: 610px;
+	height: 120px;
+	color:#616161;
+	font-size: 14px;
+	position: relative;
+	right:20px;
 
+}
+.article-text-title{
+	font-size: 18px;
+	margin-bottom: 6px;
+
+}
+.details{
+	color: #ef99a6;
+	float: right;
+	position: relative;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+	text-decoration:none;
+}
+.details-split-line{
+	
+	width: 620px;
+	height: 6px;	
+	background-image: url(../images/pointline.png);
+	float: left;
+	position: relative;
+	bottom: 5px;
+	right:-20px;
+}
 #left-nav{
 	
 	width: 152px;
@@ -73,7 +140,7 @@
 	float: right;
 	margin-left: 178px;
 	position: absolute;
-	top: 200px;
+	top: 74px;
 	font-family: "微软雅黑";
 
 }
@@ -105,15 +172,16 @@
 	height: 462px;
 	background-image: url(../images/chinamap.png);
 }
+.text-box{
+		display:none;
+}
+
 .text-box span{
 	font-family: "微软雅黑";
 	font-size: 16px;
 	color: #616161;
 }
 
-.text-box{
-		display:none;
-}
 
 
 .text-box span{
@@ -127,12 +195,37 @@
 
 	margin-top: 20px;
 	margin-left: 20px;
-	width: 570px;
+	width: 588px;
 	height: 428px;
 	background-image: url(../images/process.png);
 }
 
+#character{
+	width: 700px;
+	height: 428px;	
+	color: #616161;
 
+}
+
+.character-box{
+	font-size: 12px;
+	float: left;
+	width: 324px;
+	height:254px;
+	text-align: center;
+	margin-left: 20px;
+	margin-top: 10px;
+	
+}
+.character-box span{
+	font-size: 16px;
+}
+
+.character-box img{
+	width: 323px;
+	height: 176px;
+
+}
 #IVF-process{
 	margin-top: 20px;
 	margin-left: 10px;
@@ -182,3 +275,36 @@
 	height: 469px;
 	background-image: url(../images/process2.png);
 }
+
+#advantage{
+	width: 640px;
+	font-size: 16px;
+	color: #616161;
+	margin-top: 30px;
+
+}
+#advantage li{
+	margin-top: 16px;
+	padding-left: 20px;
+}
+
+#royal-text{
+	font-size: 14px;
+	width: 650px;
+	margin-left: 20px;
+	margin-top: 18px;
+
+}
+
+#royal-tec p{
+	margin-top:10px;
+	font-size: 14px;
+	width: 650px;
+}
+#royal-tec h4{
+	font-weight:normal;
+	font-size: 16px;
+	margin-top: 20px;
+
+}
+
