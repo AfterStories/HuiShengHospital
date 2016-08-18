@@ -11,8 +11,7 @@ window.onload = function(){　
 			for (var i = 0;i<data.data.length; i++) {				
 			
 			var $img = data.data[i].thumb
-			/*var $abstract = data.data[i].abstract*/
-			
+					
 
 			var o = $("<div>"+data.data[i].abstract+"</div>");
 			o.find("img").remove();
